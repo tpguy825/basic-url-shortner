@@ -1,7 +1,7 @@
-### Basic URL shortner
+# Basic URL shortner
 This is a basic url shortned that I made because I got bored
 ## Installation
-# Using XAMPP
+### Using XAMPP
 For this you will need:
 - A computer (obviously)
 - [XAMPP](https://www.apachefriends.org/download.html)
@@ -22,7 +22,7 @@ Steps:
 9. At the top, under modules, click `start` next to Apache
 10. Then, go to `http://localhost/folder` (replace `folder` with whatver folder it is in)
 11. Done!
-# Other
+### Other
 1. Install your webserver and set it up (make sure it supports php)
 2. Navigate to the folder where your web pages go
 3. Follow XAMPP installation steps 4-11 (ignore steps 8 and 9 as they just start the webserver)
