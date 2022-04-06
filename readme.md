@@ -12,7 +12,7 @@ Steps:
 3. Open `htdocs`
 4. Open a terminal/command prompt there (in windows explorer you can type `cmd` in the location box)
 5. Type in `git clone https://github.com/tpguy825/basic-url-shortner url`
-6. Open `url`and then `config.json`
+6. Open `url` and then `config.json`
 7. Change these values:
      - `autohttpsredirect` to `false`
      - `domain` to `localhost`
