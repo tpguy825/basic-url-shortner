@@ -1,0 +1,14 @@
+<script>
+var timeleft = 3;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "Redirecting...";
+  } else {
+    document.getElementById("countdown").innerHTML = "Redirecting you to your wesite in " + timeleft + " seconds.";
+  }
+  timeleft -= 1;
+}, 1000);
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="../style.css" rel="stylesheet">

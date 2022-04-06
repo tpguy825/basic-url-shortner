@@ -1,0 +1,25 @@
+<script>
+function fallbackCopyTextToClipboard(text) {
+        var textArea = document.getElementById("link");
+        textArea.value = text;
+
+        textArea.focus();
+        textArea.select();
+
+        document.execCommand('copy');
+    }
+    function copyTextToClipboard(text) {
+        if (!navigator.clipboard) {
+            fallbackCopyTextToClipboard(text);
+            return;
+        }
+        navigator.clipboard.writeText(text)
+    }
+    var copyLinkBtn = document.querySelector('.copy');
+
+    copyLinkBtn.addEventListener('click', function(event) {
+        copyTextToClipboard(document.getElementById("link").value);
+    });
+</script>
+<link href="../style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">

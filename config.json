@@ -1,0 +1,6 @@
+{
+    "autohttpsredirect": true,
+    "domain": "example.com",
+    "folder": "url",
+    "autoaddhttp": true
+}
