@@ -2,6 +2,7 @@
 
 // Load config.json
 $config = file_get_contents("./config.json");
+$config = json_decode($config, true);
 
 // Sets input form
 $form = '<form method="post" action="'.$_SERVER["PHP_SELF"].'">Long URL: <input style="width: 250px;" type=text name="urlinput"></input><br><input style="display: none;" type="submit" id="submit" name="submit" value="Submit"> </form><button class="style-5" onclick="document.'."getElementById('submit').".'click()">Submit</button><br>'.file_get_contents('scriptandstyles.html');
