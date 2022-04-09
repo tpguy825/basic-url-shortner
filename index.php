@@ -44,7 +44,7 @@ $base64 = base64_encode($urlinput);
 $code = isset($_GET['c']) ? test_input($_GET['c']) : '';
 
 // Generates the 5 character long code that when used in the 'c' argument will redirect you
-$first5base64 = mb_substr($base64, strlen($urlinput)-5, 5);
+$first5base64 = test_input(mb_substr($base64, strlen($urlinput)-5, 5));
 
 // Tests if the 5 digit code exists in the json array, and if it does, then $alreadyexists1 would be set to a base64 string.
 $alreadyexists1 = isset($jsonarray[$first5base64]) ? $jsonarray[$first5base64] : '';
