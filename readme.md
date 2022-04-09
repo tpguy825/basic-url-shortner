@@ -26,5 +26,7 @@ Steps:
 1. Install your webserver and set it up (make sure it supports php)
 2. Navigate to the folder where your web pages go
 3. Follow XAMPP installation steps 4-11 (ignore steps 8 and 9 as they just start the webserver)
-## Note:
+## Updates
+In order to get the latest version, please run the `updater.bat` file (on windows) and it will update your version.
+## Note
 I have tried my best to clean up the code but it is always all over the place. If you set up config.json correctly then it should work no problems.
